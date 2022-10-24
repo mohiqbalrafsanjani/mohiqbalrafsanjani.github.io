@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="dark">
+
+<head>
+    <title>
+        Links - Moh. Iqbal Rafsanjani
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/21128346?s=48&amp;v=4" width="24" height="24"
+        alt="@iqbaloutlaw" class="rounded">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        module.exports = {
+            darkMode: 'class',
+            // ...
+        }
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+
+        // Whenever the user explicitly chooses light mode
+        localStorage.theme = 'light'
+
+        // Whenever the user explicitly chooses dark mode
+        localStorage.theme = 'dark'
+
+        // Whenever the user explicitly chooses to respect the OS preference
+        localStorage.removeItem('theme')
+    </script>
+</head>
+
+<body class="bg-white dark:bg-slate-800">
+    <div class="max-w-md mx-auto bg-white dark:bg-slate-800 rounded-xl overflow-hidden md:max-w-2xl">
+        <div class="md:flex justify-center">
+            <div class="p-8">
+
+                  <div class="flex flex-col space-y-8 justify-content-center">
+                    <div><p class="text-slate-900 dark:text-white text-center">
+                        Moh. Iqbal Rafsanjani - link in bio
+                    </p></div>
+                    <div><a href="#" class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-5 px-16 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        LinkedIn
+                      </a></div>
+                    <div><a href="#" class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-5 px-16 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        Github
+                      </a></div>
+                      <div><a href="#" class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-5 px-16 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        Twitter
+                      </a></div>
+                      <div><a href="#" class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-5 px-16 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        Youtube
+                      </a></div>
+                      <div><a href="#" class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-5 px-16 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        Substack
+                      </a></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
