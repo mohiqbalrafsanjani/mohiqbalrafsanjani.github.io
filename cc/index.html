@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Character Counter</title>
+  </head>
+  <style>
+    body {
+        background-color: gray;
+    }
+    h1, h3 {
+        color: white;
+    }
+  </style>
+  <body>
+    <center>
+        <h1>Character Counter</h1>
+    <textarea id="input" rows="25" cols="50"></textarea>
+    <h3 id="result">0</h3>
+    </center>
+    
+  </body>
+  <script>
+document.querySelector("#input").addEventListener("input", function () {
+  var str = document.getElementById("input").value;
+  var length = str.length;
+  document.getElementById("result").innerHTML = length;
+});
+  </script>
+</html>
