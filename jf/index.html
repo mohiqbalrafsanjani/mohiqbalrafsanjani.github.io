@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Json Formatter</title>
+  </head>
+  <style>
+    body {
+        background-color: gray;
+    }
+    h1, h3 {
+        color: white;
+    }
+  </style>
+  <body>
+    <center>
+        <h1>Json Formatter</h1>
+    <textarea id="input" rows="25" cols="50"></textarea>
+    <textarea id="result" rows="25" cols="50"></textarea>
+    </center>
+    
+  </body>
+<script>
+    document.querySelector("#input").addEventListener("input", function () {
+  var str = document.getElementById("input").value;
+  var strp = JSON.parse(str)
+  var rs = JSON.stringify(strp, null, 1);
+  document.getElementById("result").innerHTML = rs;
+});
+</script>
+</html>
